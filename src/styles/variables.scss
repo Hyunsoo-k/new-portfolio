@@ -1,0 +1,40 @@
+// Breakpoints & Media Queries
+$breakpoint-mobile: 48rem;
+$breakpoint-tablet: 64rem;
+$breakpoint-desktop: 75rem;
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+// Z-index
+$backdrop-zindex: 1000;
+$modal-zindex: 1010;
+
+// Screen Padding
+$screen-padding-mobile: 1rem;
+$screen-padding-tablet: 1.25rem;
+$screen-padding-desktop: 1.25rem;
+
+// Background Color
+$bg-base: #FFFFFF;
+$bg-subtle: #EEF1F6;
+
+// Font Color
+$text-base: #2C2C2C;
+$text-subtle: #677E77;
+$text-invers: #FFFFFF;
