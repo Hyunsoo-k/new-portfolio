@@ -8,12 +8,13 @@
   border-bottom: 1px solid $border-base;
 
   @include tablet {
-    height: auto;
+    height: $header-height-tablet;
   }
 
   .inner {
     display: flex;
     align-items: center;
+    height: 100%;
     padding: $screen-padding-mobile;
 
     @include tablet {
