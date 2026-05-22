@@ -1,0 +1,16 @@
+@use "@/styles/variables" as *;
+
+.button {
+  padding: 0.8rem;
+  border: 1px solid $border-base;
+  border-radius: $radius;
+
+  @include tablet {
+    padding: 1rem;
+  }
+
+  &.active {
+    background-color: $bg-active;
+    color: $text-invers
+  }
+}
