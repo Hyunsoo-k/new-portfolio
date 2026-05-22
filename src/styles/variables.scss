@@ -30,6 +30,11 @@ $modal-zindex: 1030;
 // Max width
 $max-width: 75rem;
 
+// Height
+$header-height-mobile: 4rem;
+$header-height-tablet: 5rem;
+$header-height-desktop: 5rem;
+
 // Screen Padding
 $screen-padding-mobile: 1rem;
 $screen-padding-tablet: 1.25rem;
@@ -37,6 +42,7 @@ $screen-padding-desktop: 1.25rem;
 
 // Border
 $border-base: #DFE7E2;
+$radius: 10px;
 
 // Background Color
 $bg-base: #FFFFFF;
@@ -45,6 +51,6 @@ $bg-active: #148687;
 
 // Font Color
 $text-base: #2C2C2C;
-$text-subtle: #677E77;
+$text-subtle: #879993;
 $text-invers: #FFFFFF;
 $text-active: #148687;
