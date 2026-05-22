@@ -2,6 +2,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -15,10 +16,19 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: $header-height-mobile;
   color: $text-base;
   background: $bg-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include tablet {
+    padding-top: $header-height-tablet;
+  }
+
+  @include desktop {
+    padding-top: $header-height-desktop;
+  }
 }
 
 * {
@@ -33,7 +43,11 @@ a {
 }
 
 button {
-
+  border: none;
+  background-color: $bg-base;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
 ul {
