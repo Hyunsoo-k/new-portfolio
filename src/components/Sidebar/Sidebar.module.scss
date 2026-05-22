@@ -1,0 +1,43 @@
+@use "@/styles/variables" as *;
+
+.sidebar {
+  position: fixed;
+  z-index: $sidebar-zindex;
+  width: 16rem;
+  height: 100dvh;
+  background-color: $bg-base;
+  transition: all 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &.close {
+    transform: translateX(-100%);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: $screen-padding-mobile;
+    border-bottom: 1px solid $border-base;
+
+    .crossIcon {
+      margin-left: auto;
+      font-size: 1.5rem;
+      color: inherit;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: $screen-padding-mobile * 3 $screen-padding-mobile $screen-padding-mobile;
+
+    .item {
+      letter-spacing: 2px;
+    }
+  }
+}
