@@ -22,19 +22,29 @@ $breakpoint-desktop: 75rem;
 }
 
 // Z-index
-$backdrop-zindex: 1000;
-$modal-zindex: 1010;
+$Header-zidnex: 1000;
+$backdrop-zindex: 1010;
+$sidebar-zindex: 1020;
+$modal-zindex: 1030;
+
+// Max width
+$max-width: 75rem;
 
 // Screen Padding
 $screen-padding-mobile: 1rem;
 $screen-padding-tablet: 1.25rem;
 $screen-padding-desktop: 1.25rem;
 
+// Border
+$border-base: #DFE7E2;
+
 // Background Color
 $bg-base: #FFFFFF;
 $bg-subtle: #EEF1F6;
+$bg-active: #148687;
 
 // Font Color
 $text-base: #2C2C2C;
 $text-subtle: #677E77;
 $text-invers: #FFFFFF;
+$text-active: #148687;
