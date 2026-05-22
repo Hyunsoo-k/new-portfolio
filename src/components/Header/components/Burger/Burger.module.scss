@@ -1,0 +1,13 @@
+@use "@/styles/variables" as *;
+
+.burger {
+  position: relative;
+  top: 1px;
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  color: $text-base;
+
+  @include tablet {
+    display: none;
+  }
+}
