@@ -8,6 +8,10 @@
   @include tablet {
     height: 30rem;
   }
+
+  @include desktop {
+    height: 40rem;
+  }
   
   .inner {
     position: relative;
@@ -31,6 +35,10 @@
     @include desktop {
       max-width: $max-width;
       margin: 0 auto;
+      padding:
+        $screen-padding-desktop * 7
+        $screen-padding-desktop
+        $screen-padding-desktop * 6;
     }
 
     .title {
@@ -44,7 +52,7 @@
       }
 
       @include desktop {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
     }
 
