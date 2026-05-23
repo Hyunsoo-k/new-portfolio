@@ -1,0 +1,51 @@
+@use "@/styles/variables" as *;
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    gap: 4rem;
+  }
+
+  .skillSet {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+
+      @include tablet {
+        font-size: 1.2rem;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+
+      .item {
+        flex-shrink: 0;
+
+        .skillName {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 4rem;
+          padding: $screen-padding-mobile / 2;
+          border-radius: $radius;
+          font-size: 0.9rem;
+          color: $text-invers;
+
+          @include tablet {
+            padding: $screen-padding-mobile / 1.5;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
