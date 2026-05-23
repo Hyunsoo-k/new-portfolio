@@ -1,0 +1,43 @@
+@use "@/styles/variables" as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-top: $screen-padding-mobile * 2;
+  border-top: 1px solid $border-base;
+
+  .copyright {
+    font-size: 0.8rem;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
+  }
+
+  .urlList {
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+
+    @include tablet {
+      gap: 1rem;
+    }
+
+    .item {
+
+      .icon {
+        position: relative;
+        top: -2px;
+        font-size: 2rem;
+
+        &.blog {
+          position: relative;
+          top: -4px;
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
