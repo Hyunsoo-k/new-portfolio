@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import { Header } from "@/components/Header/Header";
+import { Sidebar } from "@/components/Sidebar/Sidebar";
+import { ProjectModal } from "@/components/ProjectCardList/components/ProjectModal/ProjectModal";
+import { Backdrop } from "@/components/Backdrop/Backdrop";
+
 import "./globals.scss";
 
 export const metadata: Metadata = {
@@ -21,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <Sidebar />
+        <ProjectModal />
+        <Backdrop />
+        {children}
+      </body>
     </html>
   );
 }

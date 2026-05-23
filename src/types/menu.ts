@@ -1,0 +1,1 @@
+export type Menu = "About" | "Projects" | "Skills" | "Contact" | "More";

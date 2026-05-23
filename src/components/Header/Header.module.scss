@@ -1,0 +1,38 @@
+@use "@/styles/variables" as *;
+
+.header {
+  position: fixed;
+  z-index: $Header-zidnex;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid $border-base;
+  background-color: $bg-base;
+
+  @include tablet {
+    height: $header-height-tablet;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: $screen-padding-mobile;
+
+    @include tablet {
+      padding: $screen-padding-tablet;
+    }
+
+    @include desktop {
+      max-width: $max-width;
+      margin: 0 auto;
+      padding: $screen-padding-desktop;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

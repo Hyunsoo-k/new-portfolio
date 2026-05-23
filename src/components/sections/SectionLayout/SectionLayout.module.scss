@@ -1,0 +1,37 @@
+@use "@/styles/variables" as *;
+
+.sectionLayout {
+  background-color: $bg-base;
+
+  &.subtle {
+    background-color: $bg-subtle;
+  }
+
+  .inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding:
+      4rem
+      $screen-padding-mobile
+      3rem;
+      
+    @include tablet {
+      padding:
+        5rem
+        $screen-padding-tablet
+        4rem;
+    }
+
+    @include desktop {
+      max-width: $max-width;
+      margin: 0 auto;
+      padding:
+        5rem
+        $screen-padding-desktop
+        6rem
+    }
+  }
+}
