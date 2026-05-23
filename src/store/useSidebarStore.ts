@@ -1,4 +1,5 @@
 import { create } from "zustand";
+
 import { useBackdropStore } from "./useBackdropStore";
 
 type SidebarStore = {
