@@ -37,6 +37,7 @@ export const ProjectModal = () => {
                 <Link
                   href={project.deployUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.link}
                 >
                   {project.deployUrl}
@@ -48,6 +49,7 @@ export const ProjectModal = () => {
               <Link
                 href={project.githubUrl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className={styles.link}
               >
                 {project.githubUrl}
