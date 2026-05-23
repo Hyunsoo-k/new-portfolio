@@ -1,13 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
-import { IoLogoGithub } from "react-icons/io";
 
 import { useProjectModalStore } from "@/store/useProjectModalStore";
 
 import styles from "./ProjectModal.module.scss";
-import Link from "next/link";
-import Image from "next/image";
 
 export const ProjectModal = () => {
   const { isOpen, close, project } = useProjectModalStore();

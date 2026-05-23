@@ -1,6 +1,5 @@
-import { PROJECTS } from "@/consts/projects";
-
 import { Project } from "@/types/project";
+import { PROJECTS } from "@/consts/projects";
 import { ProjectCard } from "./components/ProjectCard/ProjectCard";
 
 import styles from "./ProjectCardList.module.scss";
