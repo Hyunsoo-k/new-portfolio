@@ -1,1 +1,1 @@
-export type Menu = "About" | "Projects" | "Skills" | "Contact" | "Other";
+export type Menu = "About" | "Projects" | "Skills" | "Contact" | "More";
