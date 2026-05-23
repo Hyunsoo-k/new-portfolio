@@ -7,7 +7,7 @@ export const MoreSection = () => {
   return (
     <div className={styles.moreSection}>
       <SectionLayout
-        title="Other"
+        title="More"
         description=""
         isBgSubtle={true}
       >
