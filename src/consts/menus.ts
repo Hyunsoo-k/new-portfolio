@@ -4,7 +4,6 @@ export const MENUS: Menu[] = [
   "About",
   "Projects",
   "Skills",
-  "Github",
-  "Blog",
-  "Contact"
+  "Contact",
+  "Other"
 ];
