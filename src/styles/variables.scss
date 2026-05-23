@@ -22,11 +22,11 @@ $breakpoint-desktop: 75rem;
 }
 
 // Z-index
-$Header-zidnex: 1000;
+$Header-zidnex: 1010;
 $heroSectionInner-zindex: 1000;
 $techScroller-zindex: 900;
-$backdrop-zindex: 1010;
-$sidebar-zindex: 1020;
+$backdrop-zindex: 1020;
+$sidebar-zindex: 1030;
 $modal-zindex: 1030;
 
 // Max width
@@ -39,8 +39,8 @@ $header-height-desktop: 5rem;
 
 // Screen Padding
 $screen-padding-mobile: 1rem;
-$screen-padding-tablet: 1.25rem;
-$screen-padding-desktop: 1.25rem;
+$screen-padding-tablet: 1.5rem;
+$screen-padding-desktop: 1.5rem;
 
 // Border
 $border-base: #DFE7E2;
@@ -53,6 +53,6 @@ $bg-active: #148687;
 
 // Font Color
 $text-base: #2C2C2C;
-$text-subtle: #879993;
+$text-subtle: #808a87;
 $text-invers: #FFFFFF;
 $text-active: #148687;

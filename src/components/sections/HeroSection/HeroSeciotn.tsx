@@ -6,7 +6,7 @@ import styles from "./HeroSection.module.scss";
 
 export const HeroSection = () => {
   return (
-    <section className={styles.heroSection}>
+    <section id="About" className={styles.heroSection}>
       <TechScroller />
       <div className={styles.inner}>
         <h2 className={styles.title}>
