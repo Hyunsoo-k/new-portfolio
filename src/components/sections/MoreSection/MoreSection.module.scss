@@ -1,0 +1,16 @@
+@use "@/styles/variables" as *;
+
+.moreSection {
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: $screen-padding-mobile * 3;
+    font-size: 0.9rem;
+
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+}
