@@ -42,6 +42,15 @@ a {
   text-decoration: none;
 }
 
+input {
+  all: unset;
+}
+
+textarea {
+  all: unset;
+  resize: none;
+}
+
 button {
   border: none;
   background-color: $bg-base;
