@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "BlueNote API Server",
-    thumbnailUrl: "/images/bluenoteApiServer/thumbnail.jpg",
+    thumbnailUrl: "/images/blueNoteApiServer/thumbnail.jpg",
     isSolo: true,
     summary: "BlueNote 프로젝트의 api 서버 프로젝트입니다.",
     details: [
