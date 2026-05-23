@@ -1,0 +1,48 @@
+@use "@/styles/variables" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .infoArea {
+    flex-grow: 1;
+
+    .title {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+
+      @include tablet {
+        font-size: 1.3rem;
+      }
+    }
+
+    .email {
+      font-weight: 500;
+      color: $text-active;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .requestArea {
+    flex-grow: 1;
+
+    .title {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+
+      @include tablet {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

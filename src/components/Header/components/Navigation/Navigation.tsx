@@ -21,7 +21,7 @@ export const Navigation = () => {
       <ul className={styles.list}>
         {MENUS.map((menu: Menu) => (
           <li key={menu} className={`${styles.item} ${selected === menu ? styles.selected : ""}`}>
-            <Link href={`/#${menu}`} onClick={() => handleMenuClick(menu)}>{menu}</Link>
+            <Link href={`#${menu}`} onClick={() => handleMenuClick(menu)}>{menu}</Link>
           </li>
         ))}
       </ul>
