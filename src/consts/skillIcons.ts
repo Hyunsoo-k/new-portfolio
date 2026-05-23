@@ -1,7 +1,7 @@
 export const FE_ICONS = [
   { src: "/icons/html5.svg", alt: "html5"},
   { src: "/icons/css3.svg", alt: "css3"},
-  { src: "/icons/sass.svg", alt: "scss" },
+  { src: "/icons/sass.svg", alt: "sass" },
   { src: "/icons/javascript.svg", alt: "javascript"},
   { src: "/icons/typescript.svg", alt: "typescript" },
   { src: "/icons/tailwindCss.svg", alt: "tailwindCss" },
