@@ -10,8 +10,21 @@ import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "HYUNSOO KIM",
-  description: "Fullstack developer portfolio.",
-  keywords: ["풀스택 개발자", "개발자 포트폴리오", "김현수", "Next.js 포트폴리오", "React", "Fullstack Developer"],
+  description: "풀스택 개발자 김현수의 포트폴리오 입니다.",
+  keywords: [
+    "프론트엔드 개발자",
+    "백엔드 개발자",
+    "풀스택 개발자",
+    "개발자 포트폴리오",
+    "프론트엔드 포트폴리오",
+    "백엔드 포트폴리오",
+    "풀스택 포트폴리오",
+    "김현수",
+    "Hyunsoo Kim",
+    "Frontend Developer",
+    "Backend Developer",
+    "Fullstack Developer"
+  ],
   robots: { index: true, follow: true },
 };
 
