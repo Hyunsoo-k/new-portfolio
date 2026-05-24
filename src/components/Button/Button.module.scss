@@ -1,12 +1,15 @@
 @use "@/styles/variables" as *;
 
-.button {
+.button, .a {
   padding: 0.8rem;
   border: 1px solid $border-base;
   border-radius: $radius;
+  background-color: $bg-base;
+  font-size: 0.8rem;
 
   @include tablet {
     padding: 1rem;
+    font-size: 1rem;
   }
 
   &.active {
