@@ -1,12 +1,29 @@
+import Link from "next/link";
 import styles from "./Button.module.scss";
 
 type Props = {
+  as: "button" | "a";
+  isExternal?: boolean;
   text: string;
   variant: "default" | "active";
-  onClick: () => void;
+  href?: string;
+  onClick?: () => void;
 };
 
-export const Button = ({ text, variant, onClick }: Props) => {
+export const Button = ({ as, isExternal, text, variant, href, onClick }: Props) => {
+  if (as === "a" && href) {
+    return (
+      <Link
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className={`${styles.a} ${variant === "active" ? styles.active : ""}`}
+      >
+        {text}
+      </Link>
+    )
+  }
+
   return (
     <button
       type="button"
