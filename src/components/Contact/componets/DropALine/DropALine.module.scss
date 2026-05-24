@@ -3,40 +3,61 @@
 .dropALine {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.2rem;
 
   @include tablet {
     display: grid;
-    grid-template: auto auto auto / 1fr 1fr;
+    row-gap: 2.5rem;
+    grid-template: auto auto auto / minmax(0, 1fr) minmax(0, 1fr);
   }
 
-  .input {
-    padding: $screen-padding-mobile;
-    border: 1px solid $border-base;
-    border-radius: $radius;
+  .inputWrapper {
+    position: relative;
 
-    &::placeholder {
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: $text-subtle;
+    .input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: $screen-padding-mobile;
+      border: 1px solid $border-base;
+      border-radius: $radius;
+
+      &::placeholder {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $text-subtle;
+      }
     }
   }
 
-  .textarea {
-    min-height: 10rem;
-    padding: $screen-padding-mobile;
-    border: 1px solid $border-base;
-    border-radius: $radius;
+  .textareaWrapper {
+    position: relative;
 
     @include tablet {
       grid-area: 2 / 1 / 3 / 3;
     }
 
-    &::placeholder {
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: $text-subtle;
+    .textarea {
+      width: 100%;
+      min-height: 10rem;
+      padding: $screen-padding-mobile;
+      border: 1px solid $border-base;
+      border-radius: $radius;
+
+      &::placeholder {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $text-subtle;
+      }
     }
+  }
+
+  .error {
+    position: absolute;
+    left: 0.5rem;
+    bottom: -1.5rem;
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(214, 50, 50);
   }
 
   .submitBtn {
